@@ -1,0 +1,453 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #171717;
+}
+
+/* Header styles */
+header {
+    background-color: #171717;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: right;
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin-left: 0;
+}
+#main-header {
+    padding: 20px;
+    text-align: right;
+}
+
+#main-header img {
+    width: 130px;
+    height:75px;
+    display: inline;
+    padding-right: 1500px;
+    margin-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+
+}
+h4 {
+    margin-left: 15rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+
+}
+h5 {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+}
+.p1 {
+    text-align: center;
+}
+.p2 {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.white-link {
+    color: white;
+    text-decoration: none; 
+  }
+  
+  .white-link:hover {
+    text-decoration: underline; /* Adds an underline when hovering over the link */
+  }
+
+/* Card styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    perspective: 1000px;
+    display: table-column;
+}
+.card-img-top {
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    perspective: 1000px;
+    display: table-column;
+
+}
+
+.card .front, .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card .front {
+    background-color: #fff;
+    color: #171717;
+    
+}
+
+.card .back {
+    background-color: #171717;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
+.card {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card .front, .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .back {
+    transform: rotateY(360deg);
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+.book-covers {
+    display: flex;
+    width: 120px;
+    height: 220px;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+    overflow: hidden;
+    width: 100%; /* Make the image take up the full width of its container */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+    
+}
+.book-covers img{
+    display: inline-flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+
+}
+.book-covers img:hover {
+    transform: scale(1.2); /* Zoom in the image */
+    transition: transform 0.3s ease;
+  }
+  
+.phantomaniacs {
+    display: flex;
+    width: 220px;
+    height: 320px;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+    overflow: hidden;
+    width: 100%; 
+    transition: transform 0.3s ease; 
+}
+.phantomaniacs img {
+    display: flex;
+    margin: relative;
+    padding: 2rem;
+    align-items: center;
+    
+}
+.phantomaniacs img:hover {
+    transform: scale(1.2); /* Zoom in the image */
+    transition: transform 0.3s ease;
+  }
+  #link-container {
+    display: flex;
+    width: 220px;
+    height: 320px;
+    overflow: hidden;
+    width: 100%; /* Make the image take up the full width of its container */
+    transition: transform 0.3s ease;
+  }
+.wls {
+    display: flex;
+    width: 220px;
+    height: 320px;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+    overflow: hidden;
+    width: 100%; 
+    transition: transform 0.3s ease;
+}
+.wls img {
+    display: flex;
+    margin: relative;
+    padding: 2rem;
+    align-items: center;
+}
+.wls img:hover {
+    transform: scale(1.2); /* Zoom in the image */
+    transition: transform 0.3s ease;
+  }
+
+.timefiles {
+    display: flex;
+    width: 220px;
+    height: 320px;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+    overflow: hidden;
+    width: 100%; 
+    transition: transform 0.3s ease;
+}
+.timefiles img {
+    display: flex;
+    margin: relative;
+    padding: 2rem;
+    align-items: center;
+}
+.timefiles img:hover {
+    transform: scale(1.2); /* Zoom in the image */
+    transition: transform 0.3s ease;
+  }
+  
+  a {
+    display: inline-block; 
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+
+}
+img {
+    display: inline-block; 
+    width: 220px;
+    height: auto;
+    padding: 0.5rem;
+    margin: auto;
+    align-items: center;
+}
+ /* Reset anchor styles that might affect the image */
+ a {
+    display: inline-block; 
+    padding: 0; 
+    margin: 0;
+    border: none; 
+    text-decoration: none; 
+}
+
+/* Dropdown Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #171717;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+nav ul li a:hover {
+    background-color: #171717;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #171717;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+    color: #847e8e;
+}
+.social-icon {
+    font-size: 24px;
+    color: #847e8e; /* Default color */
+    margin: 10px;
+    transition: color 0.3s;
+    padding: 0.5rem;
+    
+}

@@ -1,0 +1,282 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #171717;
+}
+
+/* Header styles */
+header {
+    background-color: #171717;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: right;
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin-left: 0;
+}
+#main-header {
+    padding: 20px;
+    text-align: right;
+}
+
+#main-header img {
+    width: 130px;
+    height:75px;
+    display: inline;
+    padding-right: 1500px;
+    margin-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    margin-top:2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+
+
+}
+h4 {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+
+}
+h5 {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+
+}
+h6 {
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+    margin-bottom:5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+.white-link {
+    color: white;
+    text-decoration: none; /* Optional: Removes the underline from the link */
+  }
+  
+  .white-link:hover {
+    text-decoration: underline; /* Optional: Adds an underline when hovering over the link */
+  }
+
+
+
+.book-covers {
+    display: inline-flex;
+    width: 120px;
+    height: 220px;
+    padding: 0.5rem;
+    margin-left: 5rem;
+    margin-right:20rem;
+    overflow: hidden;
+    width: 100%; 
+    transition: transform 0.3s ease; 
+    
+}
+.book-covers img{
+    display: inline-flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+
+}
+.book-covers img:hover {
+    transform: scale(1.2); /* Zoom in the image */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+}
+
+/* Link Styling */
+#image-container a {
+    display: inline-block;
+}
+
+/* Image Styling */
+#image-container img {
+    width: 200px; 
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image does not overflow */
+}
+  
+/* Dropdown Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #171717;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+nav ul li a:hover {
+    background-color: #171717;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #171717;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+  
+
+
+
+/* Footer styles */
+footer {
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+    color: #847e8e;
+}
+.social-icon {
+    font-size: 24px;
+    color: #847e8e; /* Default color */
+    margin: 10px;
+    transition: color 0.3s;
+    padding: 0.5rem;
+    
+}
