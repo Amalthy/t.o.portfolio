@@ -36,6 +36,50 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
+  //Character Animation
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const character = document.getElementById('character');
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+    const speed = 4;
+    let y = window.innerHeight - footer.offsetHeight - character.clientHeight; // Start near bottom-left
+    let direction = 'up';
 
- 
+    function animateCharacter() {
+        // Calculate boundaries
+        const headerHeight = header.offsetHeight;
+        const footerHeight = footer.offsetHeight;
+        const maxY = window.innerHeight - footerHeight;
+        const minY = headerHeight;
+
+        // Move character up and down
+        switch (direction) {
+            case 'up':
+                y -= speed;
+                if (y <= minY) {
+                    direction = 'down';
+                }
+                break;
+            case 'down':
+                y += speed;
+                if (y >= maxY - character.clientHeight) {
+                    direction = 'up';
+                }
+                break;
+        }
+
+        character.style.top = y + 'px';
+
+        requestAnimationFrame(animateCharacter);
+    }
+
+    animateCharacter();
+
+    // Adjust the character's position based on scroll
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const adjustedY = y - scrollTop;
+        character.style.top = adjustedY + 'px';
+    });
+});
