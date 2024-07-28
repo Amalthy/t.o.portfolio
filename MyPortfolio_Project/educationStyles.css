@@ -16,7 +16,9 @@ header {
 
 }
 
-
+.social-icon:hover {
+    color: #ffffff;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -48,6 +50,13 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+#site-logo {
+    display: inline-block; 
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 /* Section styles */
@@ -217,7 +226,9 @@ nav ul li a:hover {
     display: block;
 } 
   
-
+li {
+    font-size: 19px;
+}
 
 
 /* Footer styles */
