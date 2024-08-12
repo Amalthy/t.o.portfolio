@@ -1,0 +1,239 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #171717;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: right;
+}
+.social-icon:hover {
+    color: #ffffff;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin-left: 0;
+}
+#main-header {
+    padding: 20px;
+    text-align: right;
+}
+
+#main-header img {
+    width: 130px;
+    height:75px;
+    display: inline;
+    padding-right: 1500px;
+    margin-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#site-logo {
+    display: inline-block; 
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+.p1 {
+    text-align: center;
+}
+
+/* Firm logo cards */
+.image-row {
+    display: flex;
+    justify-content: space-around; /* Adjust the spacing between images */
+    align-items: center; 
+    gap: 10px; /* Optional: Adds consistent spacing between items */
+    padding: 20px; 
+  }
+  .image-container {
+    width: 200px; /* Adjust the width as needed */
+    overflow: hidden; /* Hide any overflow */
+    border: 1px solid #ccc; /* Optional: Just to visualize the container boundaries */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  }
+  .image-container img {
+    width: 100%; /* Make the image take up the full width of its container */
+    display: block; /* Ensures no extra space at the bottom of the image */
+  }
+  .image-container:hover {
+    transform: scale(1.1); /* Zoom in the container (and image) */
+  }
+
+  /* Dropdown Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #171717;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+nav ul li a:hover {
+    background-color: #171717;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+li {
+    font-size: 19px;
+}
+.chillax-button {
+    background-color: #585460;
+    padding: 12px 16px;
+    border-radius: 2rem;
+}
+.chillax-button:hover {
+    background-color: #322c35;
+    text-decoration: none; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+    color: #847e8e;
+}
+.social-icon {
+    font-size: 24px;
+    color: #847e8e; /* Default color */
+    margin: 10px;
+    transition: color 0.3s;
+    padding: 0.5rem;
+    
+}
+#backToTop {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: hsla(0, 0, 0, 0.5); /* Black background */
+    color: #000000; /* White text */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #backToTop:hover {
+    background-color: #555; 
+  }

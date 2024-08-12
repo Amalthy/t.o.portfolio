@@ -1,0 +1,194 @@
+/* Header styles */
+header {
+    background-color: #171717;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: right;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin-left: 0;
+}
+#main-header {
+    padding: 20px;
+    text-align: right;
+}
+
+#main-header img {
+    width: 130px;
+    height:75px;
+    display: inline;
+    padding-right: 1500px;
+    margin-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Game Body*/
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#score-board {
+    margin-bottom: 20px;
+}
+
+#game-area {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #9689b0;
+    border: 2px solid #4c3958;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#magic-character {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px; /* Adjust the size as needed */
+}
+
+.frog {
+    position: absolute;
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+}
+
+.green-frog {
+    background-image: url('Images/green-frog.png'); /* Replace with your green frog image */
+    background-size: cover;
+}
+
+.orange-frog {
+    background-image: url('Images/orange-frog.png'); /* Replace with your orange frog image */
+    background-size: cover;
+}
+
+.beauty {
+    background-image: url('Images/beauty.png'); /* Replace with your beauty image */
+    background-size: cover;
+    width: 95px;
+    height: 110px;
+}
+
+.gold {
+    background-image: url('Images/gold.png'); /* Replace with your gold image */
+    background-size: cover;
+}
+
+#restart-button {
+    border-radius: 10px;
+    color:#4c3958;
+    background-color:#ffffff;
+
+}
+
+#backToPortfolio {
+    display: block; /* Visible by default */
+    position: fixed; /* Fixed position */
+    top: 20px; /* Place the button 20px from the top */
+    left: 30px; /* Place the button 30px from the left */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4c3958; /* Black background */
+    color: #f0f0f0; /* White text */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #backToPortfolio:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+/* Footer styles */
+footer {
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+    color: #847e8e;
+}
+.social-icon {
+    font-size: 24px;
+    color: #847e8e; /* Default color */
+    margin: 10px;
+    transition: color 0.3s;
+    padding: 0.5rem;
+    
+}
